@@ -1,0 +1,283 @@
+@import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
+/*--------- VAR  --------- */
+/* -- reset --*/
+input {
+  padding: 0 0;
+  border: 0;
+  font-family: "Raleway", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: #000000;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+H1, H2, H3, H4, H5 {
+  padding: 0;
+}
+
+/* --------  */
+body {
+  margin: 0;
+  width: auto;
+  background-color: #aaaaaa;
+  font-family: "Roboto Light", arial;
+}
+
+.main_wrapper {
+  max-width: 375px;
+  min-width: 375px;
+  margin: auto;
+  background-color: #ffffff;
+}
+
+.header {
+  width: 100%;
+  height: 60px;
+  display: flex;
+  overflow: hidden;
+  border-bottom: 1px solid #cdcdcd;
+  -webkit-box-shadow: 0 7px 4px -8px #898989;
+  -moz-box-shadow: 0 7px 4px -8px #898989;
+  box-shadow: 0 7px 4px -8px #898989;
+}
+.header a {
+  width: 100%;
+  font-size: 24px;
+  font-family: "Shrikhand", cursive;
+  margin-top: 18px;
+  text-align: center;
+}
+
+.locate {
+  display: flex;
+  height: 50px;
+  background-color: #eaeaea;
+  font-family: "Roboto Light", arial;
+  font-size: 14px;
+  font-weight: bold;
+}
+.locate__content {
+  width: 100%;
+  margin: 15px 0 15px 0;
+  text-align: center;
+  font-family: "Roboto Light", arial;
+}
+.locate__content i {
+  width: 30px;
+  height: 30px;
+  color: #2f2f2f;
+}
+
+.reservation {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  background-color: #f6f6f6;
+}
+.reservation H2 {
+  margin: 9px 0 7px 0;
+  width: 100%;
+  flex: 0 0 100%;
+  text-align: center;
+  font-family: "Roboto Light", arial;
+  font-size: 22px;
+  font-weight: bold;
+}
+.reservation div {
+  text-align: center;
+  flex: 0 0 100%;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.reservation .explore {
+  margin: 10px 0 10px 0;
+  display: flex;
+  justify-content: center;
+}
+.reservation .explore a {
+  color: #ffffff;
+  padding: 12px 15px 12px 15px;
+  border-radius: 16px 16px 16px 16px;
+  font-family: "Roboto Light", arial;
+  font-size: 15px;
+  font-weight: bold;
+  background: #A95DDB;
+  background: -moz-linear-gradient(top, #e671da 0%, #A95DDB 100%);
+  background: -webkit-linear-gradient(top, #e671da 0%, #A95DDB 100%);
+  background: linear-gradient(to bottom, #e671da 0%, #A95DDB 100%);
+  -webkit-box-shadow: 0px 9px 17px -10px rgba(0, 0, 0, 0.84);
+  box-shadow: 0px 9px 17px -10px rgba(0, 0, 0, 0.84);
+}
+.reservation .explore a:hover {
+  -webkit-box-shadow: 0px 9px 19px -13px rgba(0, 0, 0, 0.84);
+  box-shadow: 0px 9px 19px -13px rgba(0, 0, 0, 0.84);
+  opacity: 0.9;
+}
+
+.choice_wrapper > span {
+  display: block;
+  font-family: "Roboto Light", arial;
+  font-size: 22px;
+  font-weight: bold;
+  margin: 30px 0 20px 10px;
+  flex-wrap: wrap;
+  flex: 0 0 100%;
+}
+.choice_wrapper .button_wrapper {
+  width: 100%;
+  padding-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.choice_wrapper .button_wrapper a {
+  flex-wrap: wrap;
+  width: 290px;
+  height: 60px;
+  border-radius: 16px;
+  vertical-align: center;
+  line-height: 60px;
+  margin-bottom: 15px;
+  background-color: #f6f6f6;
+  font-family: "Roboto Light", arial;
+  font-size: 15px;
+  font-weight: bold;
+  -webkit-box-shadow: 0px 9px 17px -10px rgba(0, 0, 0, 0.84);
+  box-shadow: 0px 9px 17px -10px rgba(0, 0, 0, 0.84);
+}
+.choice_wrapper .button_wrapper a:hover {
+  -webkit-box-shadow: 0px 9px 19px -13px rgba(0, 0, 0, 0.84);
+  box-shadow: 0px 9px 19px -13px rgba(0, 0, 0, 0.84);
+  opacity: 0.9;
+}
+.choice_wrapper .button_wrapper a .active {
+  background-color: #ffbbea;
+  /* marche pas ? */
+}
+.choice_wrapper .button_wrapper a .round {
+  border-radius: 50%;
+  background: #9356dc;
+  color: #fff;
+  padding: 2px 7px;
+  border-radius: 50%;
+  font-size: 15px;
+  margin-left: -10px;
+}
+.choice_wrapper .button_wrapper a i {
+  margin-left: 10px;
+  color: #7b7b7b;
+}
+.choice_wrapper .button_wrapper a .text {
+  margin-left: 20px;
+}
+
+.resto_wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: auto;
+  align-items: center;
+  background-color: #f6f6f6;
+}
+.resto_wrapper > span {
+  display: block;
+  font-family: "Roboto Light", arial;
+  font-size: 22px;
+  font-weight: bold;
+  margin: 30px 0 20px 10px;
+  flex-wrap: wrap;
+  flex: 0 0 100%;
+}
+.resto_wrapper .resto_link {
+  width: 290px;
+  height: 200px;
+  margin-bottom: 20px;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  overflow: hidden;
+  -webkit-box-shadow: 0px 9px 17px -10px rgba(0, 0, 0, 0.84);
+  box-shadow: 0px 9px 17px -10px rgba(0, 0, 0, 0.84);
+  border-radius: 16px;
+}
+.resto_wrapper .resto_link:hover {
+  -webkit-box-shadow: 0px 9px 19px -13px rgba(0, 0, 0, 0.84);
+  box-shadow: 0px 9px 19px -13px rgba(0, 0, 0, 0.84);
+  opacity: 0.9;
+}
+.resto_wrapper .resto_link img.illus {
+  position: absolute;
+  top: -65px;
+}
+.resto_wrapper .resto_link__txt {
+  align-self: flex-end;
+  margin-bottom: 6px;
+  display: flex;
+  flex-direction: column;
+}
+.resto_wrapper .resto_link__txt span.title {
+  font-family: "Roboto Light", arial;
+  font-size: 17px;
+  font-weight: bold;
+  margin-left: 12px;
+}
+.resto_wrapper .resto_link__txt span.local {
+  margin-left: 12px;
+  margin-top: 5px;
+}
+.resto_wrapper .resto_link__heart {
+  height: 20px;
+  width: 20px;
+  margin-top: 20px;
+  display: block;
+  color: #b6b6b6;
+  font-size: 20px;
+  position: absolute;
+  bottom: 20px;
+  right: 30px;
+}
+.resto_wrapper .resto_link__heart:hover {
+  background: #A95DDB;
+  background: -moz-linear-gradient(top, #e671da 0%, #A95DDB 100%);
+  background: -webkit-linear-gradient(top, #e671da 0%, #A95DDB 100%);
+  background: linear-gradient(to bottom, #e671da 0%, #A95DDB 100%);
+}
+
+.footer {
+  width: 100%;
+  height: auto;
+  background-color: #000000;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+}
+.footer__title {
+  display: block;
+  font-family: "Shrikhand", cursive;
+  font-size: 17px;
+  margin: 7px 0 5px 10px;
+}
+.footer ul {
+  margin: 7px 0 5px 10px;
+}
+.footer ul li {
+  margin-bottom: 8px;
+}
+.footer ul li a {
+  font-size: 14px;
+  color: #ffffff;
+}
+.footer ul li a i {
+  width: 30px;
+}
+
+/*# sourceMappingURL=style.css.map */

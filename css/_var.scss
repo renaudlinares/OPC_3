@@ -1,0 +1,79 @@
+/*--------- VAR  --------- */
+
+$primary: #9356DC;
+$secondary: #FF79DA;
+$third: #99E2D0;
+$back_col1 : #ffffff;
+$back_col2 :  #f6f6f6 ;
+
+$font1 : 'Shrikhand', cursive;
+$font2 : "Roboto Light", arial;
+
+
+
+
+@mixin header-shadow{
+  border-bottom: 1px solid #cdcdcd;
+  -webkit-box-shadow: 0 7px 4px -8px #898989;
+  -moz-box-shadow: 0 7px 4px -8px #898989;
+  box-shadow: 0 7px 4px -8px #898989;
+
+}
+
+
+@mixin text_para {
+  font-family: $font2;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+@mixin text_s1 {
+  font-family: $font2;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+@mixin text_s2 {
+  font-family: $font2;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+
+@mixin text_s3 {
+  font-family: $font2;
+  font-size: 17px;
+  font-weight: bold;
+}
+
+
+@mixin grad_explore{
+  background: #A95DDB;
+  background: -moz-linear-gradient(top,   #e671da 0%, #A95DDB 100%);
+  background: -webkit-linear-gradient(top, #e671da 0%, #A95DDB 100%);
+  background: linear-gradient(to bottom, #e671da 0%, #A95DDB 100%);
+}
+
+@mixin shadow_1 {
+  -webkit-box-shadow: 0px 9px 17px -10px rgba(0,0,0,0.84);
+  box-shadow: 0px 9px 17px -10px rgba(0,0,0,0.84);
+}
+
+@mixin shadow_1_hover {
+  -webkit-box-shadow: 0px 9px 19px -13px rgba(0,0,0,0.84);
+  box-shadow: 0px 9px 19px -13px rgba(0,0,0,0.84);
+  opacity: 0.9;
+}
+
+@mixin txt_center {
+  text-align: center;
+}
+
+@mixin round_letter{
+  border-radius: 50%;
+  background: #9356dc;
+  color: #fff;
+  padding: 2px 7px;
+  border-radius: 50%;
+  font-size: 15px;
+}

@@ -1,0 +1,351 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
+@import "var";
+
+
+
+/* -- reset --*/
+
+input  {
+  padding: 0 0;
+  border: 0;
+  font-family: 'Raleway', sans-serif;
+}
+
+
+a{
+  text-decoration: none;
+  color: #000000;
+}
+
+ul
+{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+
+H1, H2, H3, H4, H5 {
+  padding: 0;
+}
+
+
+
+/* --------  */
+
+body {
+  margin :0;
+  width: auto;
+  background-color: #aaaaaa;
+  font-family: $font2;
+}
+
+
+.main_wrapper {
+  max-width: 375px;
+  min-width: 375px;
+  margin: auto;
+
+  background-color: $back_col1;
+
+}
+
+.header {
+  width: 100%;
+  height:60px;
+  display: flex;
+  overflow: hidden;
+  @include header-shadow;
+
+  a {
+    width:100%;
+    font-size: 24px;
+    font-family: $font1;
+    margin-top: 18px;
+    text-align: center;
+  }
+
+}
+
+
+.locate{
+  display: flex;
+  height:50px;
+  background-color: #eaeaea;
+  @include text_s2 ;
+
+  &__content {
+    width:100%;
+    margin: 15px 0 15px 0;
+    text-align: center;
+    font-family: $font2;
+    i {
+      width: 30px;
+      height: 30px;
+      color: #2f2f2f;
+    }
+  }
+}
+
+.reservation {
+
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  background-color: $back_col2;
+
+  H2 {
+    margin: 9px 0 7px 0;
+    width: 100%;
+    flex: 0 0 100%;
+    text-align: center;
+    @include text_para ;
+  }
+
+  div {
+    text-align: center;
+    flex: 0 0 100%;
+    flex-wrap: wrap;
+    width: 100%;
+    }
+
+  .explore{
+    margin: 10px 0 10px 0;
+    display: flex;
+    justify-content: center;
+
+
+    a{
+      color: #ffffff;
+      padding: 12px 15px 12px 15px;
+      border-radius: 16px 16px 16px 16px;
+      @include text_s1 ;
+      @include grad_explore;
+      @include shadow_1;
+      &:hover {
+        @include shadow_1_hover;
+      }
+
+    }
+
+
+  }
+
+}
+
+
+.choice_wrapper {
+
+
+  >span {
+    display: block;
+    @include text_para ;
+    margin: 30px 0 20px 10px;
+    flex-wrap: wrap;
+    flex: 0 0 100%;
+  }
+
+  .button_wrapper {
+    width: 100%;
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    a{
+      flex-wrap: wrap;
+      width: 290px;
+      height: 60px;
+      border-radius: 16px;
+      vertical-align: center;
+      line-height: 60px;
+      margin-bottom: 15px;
+      background-color: #f6f6f6;
+      @include text_s1 ;
+      @include shadow_1;
+      &:hover { @include shadow_1_hover; }
+
+      .active{
+        background-color: #ffbbea; /* marche pas ? */
+      }
+
+      .round{
+        @include round_letter;
+        margin-left: -10px;
+      }
+
+      i{
+        margin-left: 10px;
+        color: #7b7b7b;
+      }
+
+      .text{
+        margin-left: 20px;
+      }
+    }
+  }
+
+
+}
+
+
+.resto_wrapper{
+
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: auto;
+  align-items: center;
+
+  background-color: $back_col2;
+
+  >span {
+    display: block;
+    @include text_para ;
+    margin: 30px 0 20px 10px;
+    flex-wrap: wrap;
+    flex: 0 0 100%;
+  }
+
+  .resto_link{
+
+    width: 290px;
+    height:200px;
+    margin-bottom: 20px;
+    background-color: #ffffff;
+
+    display: flex;
+    flex-direction: row;
+
+    position: relative;
+    overflow: hidden;
+
+    @include shadow_1;
+    border-radius: 16px;
+
+    &:hover{ @include shadow_1_hover;}
+
+    img.illus{
+      position: absolute;
+      top: -65px;
+    }
+
+    &__txt{
+      align-self: flex-end;
+      margin-bottom: 6px;
+      display: flex;
+      flex-direction: column;
+
+      span.title{
+        @include text_s3;
+        margin-left: 12px;
+      }
+
+      span.local{
+        margin-left: 12px;
+        margin-top: 5px;
+      }
+
+    }
+
+    &__heart{
+      height: 20px;
+      width: 20px;
+      margin-top: 20px;
+      display: block;
+      color: #b6b6b6;
+      font-size: 20px;
+
+      position: absolute;
+      bottom: 20px;
+      right:30px;
+      &:hover{ @include grad_explore;}
+    }
+
+
+  }
+
+}
+
+
+
+.footer {
+  width: 100%;
+  height:auto;
+  background-color: #000000;
+  color:#ffffff;
+  display: flex;
+  flex-direction: column;
+
+  &__title{
+    display: block;
+    font-family: $font1;
+    font-size: 17px;
+    margin: 7px 0 5px 10px;
+  }
+
+
+  ul{
+    margin: 7px 0 5px 10px;
+    li{
+      margin-bottom: 8px;
+      a{
+        font-size: 14px;
+        color:#ffffff;
+        i{
+          width: 30px;
+        }
+      }
+    }
+  }
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
