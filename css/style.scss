@@ -433,6 +433,9 @@ body {
 
     }
 
+
+
+
     &__check{
       display: flex;
       width: 17%;
@@ -446,13 +449,13 @@ body {
       i{
         font-size: 20px;
         color: #ffffff;
-        opacity: 0.3;
+        opacity: 0.2;
       }
-
       transition: margin-right 450ms;
-      
+
 
     }
+
 
       //$this: &;   // marche pas , chercher
 
