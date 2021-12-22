@@ -350,6 +350,7 @@ body {
       height  : 1px;
       width   :  50px;
       border-bottom:3px solid $third;
+      // margin:0 auto;
       padding:4px 0px;
     }
 
@@ -386,9 +387,7 @@ body {
         opacity : 1
       }
     }
-
-
-    animation: anim_recipe  1500ms ease-in-out  ;
+    animation: anim_recipe 1500ms ease-in-out  ;
 
 
 
@@ -449,6 +448,9 @@ body {
         color: #ffffff;
         opacity: 0.3;
       }
+
+      transition: margin-right 450ms;
+
     }
 
       //$this: &;   // marche pas , chercher
@@ -461,8 +463,6 @@ body {
 
       .recipe__check {
         margin-right: 0%;
-        transition: margin-right 450ms;
-
         i{
           opacity:1;
           transform: rotate(720deg);

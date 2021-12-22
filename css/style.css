@@ -391,6 +391,7 @@ body {
   background-color: #99E2D0;
   justify-content: center;
   align-items: center;
+  transition: margin-right 450ms;
 }
 .menu .recipe__check i {
   font-size: 20px;
@@ -405,7 +406,6 @@ body {
 }
 .menu .recipe:hover .recipe__check {
   margin-right: 0%;
-  transition: margin-right 450ms;
 }
 .menu .recipe:hover .recipe__check i {
   opacity: 1;
